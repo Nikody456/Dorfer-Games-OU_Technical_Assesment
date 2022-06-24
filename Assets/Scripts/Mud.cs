@@ -39,7 +39,7 @@ public class Mud : MonoBehaviour, IClick
 
     private IEnumerator Grow(Transform cropTransform, Crop crop)
     {
-        cropTransform.DOMove(new Vector3(cropTransform.transform.position.x, 6, cropTransform.transform.position.z), 1);
+        cropTransform.DOMove(new Vector3(cropTransform.transform.position.x, 6, cropTransform.transform.position.z), 10);
         _stage = "GROW";
         yield return new WaitUntil(() => cropTransform.transform.position.y == 6);
 

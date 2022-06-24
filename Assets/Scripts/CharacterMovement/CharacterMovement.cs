@@ -55,7 +55,7 @@ public class CharacterMovement : MonoBehaviour
             this.GetComponent<Animator>().SetBool("isHarvesting", true);
             _sickle.SetActive(true);
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
 
             _sickle.SetActive(false);
             Destroy(crop);
